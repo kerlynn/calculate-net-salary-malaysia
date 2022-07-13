@@ -1,4 +1,3 @@
-require 'money'
 
 def get_epf 
   @monthly_income * 11.to_f/100
