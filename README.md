@@ -1,2 +1,2 @@
-# calculate-country-based-net-income-
-calculate net income in different countries
+# calculate-net-salary-malaysia
+Calculate net salary after deduction for EPF, EIS and SOCSO
