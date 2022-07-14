@@ -13,21 +13,19 @@ def get_socso
   return ((@monthly_income - 1010)/100)* 0.5 + 5.25
 end
 
-def get_tax
-end
-
 def calculate_net_income monthly_income
 
   return 'salary too low' if monthly_income <= 1000
   @monthly_income = monthly_income
   
-  @monthly_income - get_epf - get_eis- get_socso
+  @monthly_income - get_epf - get_eis - get_socso
 
 end
 
 puts 'Insert Your Monthly Income:'
 monthly_income = gets.chomp.to_f
-
-puts calculate_net_income(monthly_income)
+monthly = calculate_net_income(monthly_income)
+yearly = monthly * 12
+puts "monthly: #{monthly}, yearly: #{yearly}"
 
 
